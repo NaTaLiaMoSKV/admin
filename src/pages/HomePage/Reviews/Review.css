@@ -1,0 +1,105 @@
+.sliderContainer {
+  width: 100%;
+}
+
+.heroGalleryContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.reviews {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  transition: transform 800ms linear;
+}
+
+.review {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 0;
+}
+
+.reviewImage {
+  width: 80px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.reviewNameText {
+  font-size: 20px;
+  letter-spacing: 0.03em;
+}
+
+.reviewProfessionText {
+  color: #929090;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.reviewText {
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .reviewText {
+    width: 300px;
+  }
+
+  .sliderContainer {
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heroGalleryContainer {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .reviewText {
+    width: 300px;
+  }
+
+  .sliderContainer {
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sliderContainer {
+    max-width: 700px;
+  }
+
+  .reviewImage {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .heroGalleryContainer {
+    width: 500px;
+  }
+
+  .reviewNameText {
+    font-size: 24px;
+  }
+
+  .reviewProfessionText {
+    font-size: 16px;
+  }
+
+  .reviewText {
+    font-size: 18px;
+  }
+}

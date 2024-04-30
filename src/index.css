@@ -1,0 +1,172 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "react-toastify/dist/ReactToastify.css";
+
+body {
+  overflow-x: hidden;
+  color: #282828;
+  font-family: "Helvetica", sans-serif;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+#root {
+  flex: 1;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3a3a3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
+  transition: background 0.3s ease-in-out;
+}
+
+select {
+  width: 320px;
+  border: 2px solid #8bbb97;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.action-btn {
+  padding: 10px 30px;
+  text-align: center;
+  border: 1px solid #2c2c2c;
+  font-family: "Helvetica", sans-serif;
+  background-color: transparent;
+  color: #2c2c2c;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  letter-spacing: 0.04em;
+  font-weight: bold;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: fill 0.3s ease-in-out;
+}
+
+.action-btn[attr="primary"] {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+.action-btn[attr="primary"]:hover {
+  background-color: transparent;
+  color: #2c2c2c;
+}
+
+.action-btn:hover {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.action-btn:disabled {
+  border: 1px solid #dadada;
+  background-color: #dadada;
+  color: rgb(158, 158, 158);
+}
+
+.action-btn:disabled:hover,
+.action-btn:disabled:focus {
+  border: 1px solid #dadada;
+  background-color: #dadada;
+  color: rgb(158, 158, 158);
+}
+
+button,
+a,
+select {
+  cursor: pointer;
+}
+
+a {
+  color: #4a334f;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #7ea888;
+}
+
+.status-info {
+  color: #8bbb97;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.copied-text {
+  visibility: visible;
+  color: #8bbb97;
+  letter-spacing: 0.04em;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.copied-text.hidden {
+  visibility: hidden;
+  color: transparent;
+}
