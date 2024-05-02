@@ -71,7 +71,6 @@ export const NavButton = styled.button`
   }
 
   &:hover {
-    // border: 2px solid #8bbb97;
     background-color: #769c7f;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }

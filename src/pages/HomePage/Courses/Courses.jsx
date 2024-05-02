@@ -15,39 +15,6 @@ import { Link } from "react-router-dom";
 import { useGetUnauthorizedCoursesQuery } from "../../../redux/userApi";
 import Loader from "components/Loader";
 
-// const courses = [
-//   {
-//     title: "Java Script",
-//     description: "Course description",
-//     teacher: {
-//       email: "teacher1@mail.com",
-//       name: "Alex Teacher",
-//       id: "660ae3966d50d5f12f8aede4",
-//     },
-//     id: "660b0ea0ee6ce91fba6a6b1a",
-//   },
-//   {
-//     title: "React",
-//     description: "React description",
-//     teacher: {
-//       email: "teacher1@mail.com",
-//       name: "Alex Teacher",
-//       id: "660ae3966d50d5f12f8aede4",
-//     },
-//     id: "660fdb56a5454895f8612756",
-//   },
-//   {
-//     title: "Python",
-//     description: "Python description",
-//     teacher: {
-//       email: "teacher2@mail.com",
-//       name: "Sam T",
-//       id: "660c4e5661af6e0d69366e68",
-//     },
-//     id: "66158ef1a98ef3f688a0178f",
-//   },
-// ];
-
 const Courses = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewContainerRef = useRef(null);

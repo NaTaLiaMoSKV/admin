@@ -148,7 +148,6 @@ const CreateLessonsModal = ({ group, handleClose }) => {
 
   const handleSubmit = async () => {
     if (!isReadyToSubmit) {
-      console.log("Not ready");
       return;
     }
     try {

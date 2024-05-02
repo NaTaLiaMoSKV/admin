@@ -1,8 +1,6 @@
 import axios from "axios";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-// console.log(`REACT_APP_API_URL: [${process.env.REACT_APP_API_URL}]`);
-
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
 export const fetchUser = createAsyncThunk(

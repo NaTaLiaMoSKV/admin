@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-// import { getDefaultMiddleware } from "@reduxjs/toolkit";
 import { authReducer } from "./authSlice";
 import { courseApi } from "./courseApi";
 import { teacherApi } from "./teacherApi";
@@ -17,10 +16,6 @@ const authConfig = {
 };
 
 const authPersistedReducer = persistReducer(authConfig, authReducer);
-
-// const customizedMiddleware = getDefaultMiddleware({
-//   serializableCheck: false,
-// });
 
 export const store = configureStore({
   reducer: {
