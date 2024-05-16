@@ -8,6 +8,11 @@ import {
 } from "./Benefits.styled";
 import { SectionContainer } from "styles/Section.styled";
 
+import effIcon from "images/efficiency.png";
+import flexIcon from "images/flexibility.png";
+import engIcon from "images/engagement.png";
+import anIcon from "images/analytics.png";
+
 const Benefits = () => {
   return (
     <section>
@@ -26,11 +31,10 @@ const Benefits = () => {
               cutting-edge technology with personalized support.{" "}
             </p>
           </TitleContainer>
-          {/* <TitleComponent titleText={"What Makes Us the Preferred Choice?"} /> */}
           <BenefitsList>
             <BenefitsItem>
               <BenefitsImageWrapper>
-                <img src="./logo.png" alt="Efficiency"></img>
+                <img src={effIcon} alt="Efficiency"></img>
               </BenefitsImageWrapper>
               <h3>Efficiency</h3>
               <p>
@@ -40,7 +44,7 @@ const Benefits = () => {
             </BenefitsItem>
             <BenefitsItem>
               <BenefitsImageWrapper>
-                <img src="./logo.png" alt="Flexibility"></img>
+                <img src={flexIcon} alt="Flexibility"></img>
               </BenefitsImageWrapper>
               <h3>Flexibility</h3>
               <p>
@@ -50,7 +54,7 @@ const Benefits = () => {
             </BenefitsItem>
             <BenefitsItem>
               <BenefitsImageWrapper>
-                <img src="./logo.png" alt="delivery"></img>
+                <img src={engIcon} alt="engagement"></img>
               </BenefitsImageWrapper>
               <h3>Engagement</h3>
               <p>
@@ -60,7 +64,7 @@ const Benefits = () => {
             </BenefitsItem>
             <BenefitsItem>
               <BenefitsImageWrapper>
-                <img src="./logo.png" alt="return"></img>
+                <img src={anIcon} alt="analytics"></img>
               </BenefitsImageWrapper>
               <h3>Analytics</h3>
               <p>
