@@ -1,4 +1,3 @@
-www.natasha.edu
 / Home public
 /login Login page public
 /settings User settings protected
