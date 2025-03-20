@@ -1,9 +1,3 @@
-/ Home public
-/login Login page public
-/settings User settings protected
-/course Courses list protected
-/course/:id Course protected
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
